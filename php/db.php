@@ -4,7 +4,7 @@
 	$dbServer = "localhost"; 
     $dbname = "mysql"; 
     $dbuser = "root";
-    $dbpass = "HgfbYCh3735dBGffkfj3ff"; 
+    $dbpass = ""; 
 	function conndb()
 	{
 		$GLOBALS['db_load_time_start']=microtime(true);
