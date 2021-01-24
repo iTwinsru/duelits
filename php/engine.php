@@ -88,8 +88,8 @@ function FindingDuelist($token)
 				break;
 			}
 		}
-		sleep(0.3);
-	}while($step++<6000);
+		sleep(1);
+	}while($step++<20);
 	return $out;
 }
 
