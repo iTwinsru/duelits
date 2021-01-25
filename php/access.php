@@ -81,7 +81,7 @@ function getAccess($calback)
 			$pass_db=dbgetsell("pass","token",$token_c);
 			$token_db=dbgetsell("token","login",$login_db);
 			$token_now=createtoken($login_db,$pass_db);
-			if($token_c==$token_db && $token_c===$token_now && $token_db==$token_now)
+			if($token_c==$token_db && $token_c==$token_now && $token_db==$token_now)
 			{
 				setcookie("duelistgametoken", $token_c,time()+3600);
 				$calback(json_decode('{"token":"'.$token_c.'","login":"'.$login_db.'","status":"ok","access":1}'));
